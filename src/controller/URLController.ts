@@ -31,4 +31,22 @@ export class URLController {
 
 		response.status(400).json({ error: 'URL not found' })
 	}
+
+	public async getAll(req: Request, response: Response): Promise<void> {
+		const url = await URLModel.find({})
+
+		if (url) {
+			response.json(url)
+			return
+		}
+
+		response.status(400).json({ error: 'no records found' })
+	}
+
+	public async delete(req: Request, response: Response): Promise<void> {
+		const { hash } = req.params
+		const url = await URLModel.deleteOne ({ hash })
+
+		response.status(400).json({ error: 'URL not found' })
+	}
 }
