@@ -6,6 +6,10 @@
 - `npm run build`
 - `npm run dev`
 
+### adicionado um front simplificado (javascript) para listar, inserir e deletar URLs
+
+- `/front`
+
 
 ### References: [alexiadorneles/url-shortener-dio](https://github.com/alexiadorneles/url-shortener-dio) / [Getting Started with MongoDB Atlas](https://www.youtube.com/watch?v=S4fi6Qux-4g)
 
