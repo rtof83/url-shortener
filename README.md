@@ -2,6 +2,7 @@
 
 ## Projeto Eduzz Fullstack Developer #2 | Construindo um Encurtador de URL
 
+- `change MONGO_CONNECTION -> /src/config/Constants.ts`
 - `npm install`
 - `npm run build`
 - `npm run dev`
