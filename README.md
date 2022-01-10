@@ -7,6 +7,11 @@
 - `npm run build`
 - `npm run dev`
 
+## api
+
+- `adição das rotas 'delete' e 'get all'`
+
+
 ### adicionado um front simplificado (javascript) para listar, inserir e deletar URLs
 
 - `/front`
