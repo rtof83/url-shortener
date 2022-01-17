@@ -15,15 +15,15 @@ async function listRepositories() {
        if (repositories.length === 0) {
          listRepositories = 'nenhum registro encontrado';
        } else {
-         listRepositories = '<table>'
-                         +   '<th>original URL</th>'
-                         +   '<th>short URL</th>';
+         listRepositories = `<table>
+                              <th>original URL</th>
+                              <th>short URL</th>`;
          for (i in repositories) {
-           listRepositories += '<tr>'
-                       +    '<td><a href="'+repositories[i].originURL+'" target="_blank">'+repositories[i].originURL+'</a></td>'
-                       +    '<td><a href="'+repositories[i].shortURL+'" target="_blank">'+repositories[i].shortURL+'</a></td>'
-                       +    '<td class="table"><button class="remove" onclick="deleteURL(\''+repositories[i].hash+'\')">excluir</button></td>'
-                       +  '</tr>';
+           listRepositories += `<tr>
+                                  <td><a href="${repositories[i].originURL}" target="_blank">${repositories[i].originURL}</a></td>
+                                  <td><a href="${repositories[i].shortURL}" target="_blank">${repositories[i].shortURL}</a></td>
+                                  <td class="tdButton"><button class="remove" onclick="deleteURL(\'${repositories[i].hash}\')">excluir</button></td>
+                                </tr>`;
          }
          listRepositories += '</table>';
        }

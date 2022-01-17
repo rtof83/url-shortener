@@ -10,14 +10,13 @@ html {
 
  /*-------------------------------------------------*/
 
-
 header {
     display: grid;
     justify-items: center;
 }
 
 input {
-    width: 800px;
+    width: 80%;
     height: 1.6rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -45,16 +44,17 @@ input {
 }
 
 .remove {
-    margin-bottom: .5rem;
     text-align: center;
     border-radius: 1rem;
     background: rgb(221, 25, 25);
     color: #fff;
     font-weight: bold;
     padding: .25rem;
-    margin-right: .5rem;
     cursor: pointer;
     transition: .2;
+    width: 3.5rem;
+    display: block;
+    margin: auto;
 }
 
 .remove:hover {
@@ -77,12 +77,30 @@ input {
 
 table{
     border-collapse: collapse;
-    border-spacing: 0;
+    max-width: 80%;
+    table-layout: fixed;
 }
 
 th, td {
-    padding: 10px 20px;
+    padding: 15px 15px;
     border: 1px solid #000;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: rgb(233, 233, 233);
+}
+
+.lastTd {
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+.tdButton {
+    width: 4rem;    
 }
 
 footer {
@@ -95,21 +113,6 @@ footer {
     /* fixar rodapé */
     position: fixed;
     bottom: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 0.2rem 0;
-}
-
-.lastTd {
-    border-right: none;
-    border-bottom: none;
-    border-top: none;
 }
 
 h4 {
